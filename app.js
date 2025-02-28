@@ -174,7 +174,21 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 
 Complete the exercise in the space below:
 */
+function basicCalculator(num1,num2,operation){
+    if (operation ==="add"){
+        return num1+num2
+    }
 
+    else if (operation ==="subtract"){
+        return num1-num2
+    }
 
+    else if (operation ==="multiply"){
+        return num1*num2
+    }
 
-// console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+    else if (operation ==="divide"){
+        return num1/num2
+    }
+}
+// console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"));
