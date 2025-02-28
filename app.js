@@ -99,9 +99,20 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 function maxOfThree(num1,num2,num3){
+if (num1>=num2){
+    max = num1 
+   
+} else{
+    max = num2 
+    
 
 }
+if (num3>=max){
+max = num3
 
+}
+return max
+}
 
 // console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
 
@@ -116,7 +127,9 @@ Example: calculateTip(50, 20) should return 10.
 
 Complete the exercise in the space below:
 */
-
+function calculateTip(billAmmount, tipPercentage){
+    return ((tipPercentage/100)*billAmmount)+billAmmount
+}
 
 
 // console.log('Exercise 7 Result:', calculateTip(50, 20));
@@ -134,7 +147,14 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 
 Complete the exercise in the space below:
 */
-
+function convertTemperature(temperature,string){
+    if (string ==="C"){
+        return `${temperature*1.8+32} (Farenheit)`
+    }
+    else if (string ==="F"){
+        return `${(temperature-32)/1.8} (Celcius)`
+    }else return "write ur check better"
+}
 
 
 // console.log('Exercise 8 Result:', convertTemperature(32, "C"));
